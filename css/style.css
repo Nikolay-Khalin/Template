@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -70,22 +72,100 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-header {
-  background-color: #000;
-}
-
-h1 {
-  color: green;
-}
-
 body {
-  font-size: 30px;
+  font-family: "lato";
 }
 
-body div {
-  font-size: 10px;
+.about__body {
+  max-width: 823px;
+  margin: 0px auto;
 }
 
-.red {
-  color: red;
+.about__header {
+  margin: 0px 0px 65px 0px;
+}
+
+.about__title {
+  margin: 0px 0px 30px 0px;
+}
+
+.about__text {
+  max-width: 688px;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25.89px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  margin: 0 -15px;
+}
+
+.about__column {
+  padding: 0 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background: #000;
+  margin: 0px 0px 0px -25px;
+}
+
+.item-about__icon {
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  margin: 0px auto;
+  width: 92px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-about__title {
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+
+.item-about__text {
+  text-align: center;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
 }
